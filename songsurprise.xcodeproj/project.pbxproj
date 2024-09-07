@@ -33,7 +33,6 @@
 		89F7CF232C8B91FC007406FA /* TableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF222C8B91FC007406FA /* TableViewProvider.swift */; };
 		89F7CF252C8B921C007406FA /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF242C8B921C007406FA /* TableView.swift */; };
 		89F7CF292C8B927F007406FA /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 89F7CF282C8B927F007406FA /* Supabase */; };
-		89F7CF3D2C8BC27E007406FA /* audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF3C2C8BC27E007406FA /* audio.swift */; };
 		89F7CF3F2C8C8412007406FA /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF3E2C8C8412007406FA /* Client.swift */; };
 		89F7CF422C8C8597007406FA /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF412C8C8597007406FA /* Track.swift */; };
 		89F7CF452C8C8655007406FA /* GenresController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF442C8C8655007406FA /* GenresController.swift */; };
@@ -78,7 +77,6 @@
 		89F7CF002C890E9A007406FA /* WaveformLiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformLiveView.swift; sourceTree = "<group>"; };
 		89F7CF222C8B91FC007406FA /* TableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProvider.swift; sourceTree = "<group>"; };
 		89F7CF242C8B921C007406FA /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
-		89F7CF3C2C8BC27E007406FA /* audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audio.swift; sourceTree = "<group>"; };
 		89F7CF3E2C8C8412007406FA /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		89F7CF412C8C8597007406FA /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		89F7CF442C8C8655007406FA /* GenresController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresController.swift; sourceTree = "<group>"; };
@@ -178,7 +176,6 @@
 				89F7CEDB2C88C517007406FA /* Onboarding */,
 				89F7CEE02C88E6C6007406FA /* MainController.swift */,
 				89F7CEE22C88F8C5007406FA /* SettingsController.swift */,
-				89F7CF3C2C8BC27E007406FA /* audio.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -374,7 +371,6 @@
 				89F7CEFA2C890E34007406FA /* WaveformImageDrawer+iOS.swift in Sources */,
 				89F7CEE12C88E6C6007406FA /* MainController.swift in Sources */,
 				89F7CF5B2C8CA47A007406FA /* OrderView.swift in Sources */,
-				89F7CF3D2C8BC27E007406FA /* audio.swift in Sources */,
 				89F7CF452C8C8655007406FA /* GenresController.swift in Sources */,
 				89F7CF482C8C88BD007406FA /* CollectionViewProvider.swift in Sources */,
 				89F450F72C866B2F00A0F821 /* SceneDelegate.swift in Sources */,
