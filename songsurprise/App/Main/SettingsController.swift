@@ -11,6 +11,6 @@ class SettingsController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.view.backgroundColor = .systemBackground
+        view.backgroundColor = .systemBackground
     }
 }

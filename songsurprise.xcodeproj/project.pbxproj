@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		89F450F52C866B2F00A0F821 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F450F42C866B2F00A0F821 /* AppDelegate.swift */; };
 		89F450F72C866B2F00A0F821 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F450F62C866B2F00A0F821 /* SceneDelegate.swift */; };
-		89F450F92C866B2F00A0F821 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F450F82C866B2F00A0F821 /* ViewController.swift */; };
 		89F450FE2C866B3100A0F821 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89F450FD2C866B3100A0F821 /* Assets.xcassets */; };
 		89F451012C866B3100A0F821 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 89F451002C866B3100A0F821 /* Base */; };
 		89F7CED12C88BE52007406FA /* OnboardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CED02C88BE52007406FA /* OnboardItem.swift */; };
@@ -34,8 +33,6 @@
 		89F7CF232C8B91FC007406FA /* TableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF222C8B91FC007406FA /* TableViewProvider.swift */; };
 		89F7CF252C8B921C007406FA /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF242C8B921C007406FA /* TableView.swift */; };
 		89F7CF292C8B927F007406FA /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 89F7CF282C8B927F007406FA /* Supabase */; };
-		89F7CF332C8B9AAB007406FA /* OnboardingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF322C8B9AAB007406FA /* OnboardingsController.swift */; };
-		89F7CF3B2C8BA3D8007406FA /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF3A2C8BA3D8007406FA /* PlayerController.swift */; };
 		89F7CF3D2C8BC27E007406FA /* audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF3C2C8BC27E007406FA /* audio.swift */; };
 		89F7CF3F2C8C8412007406FA /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF3E2C8C8412007406FA /* Client.swift */; };
 		89F7CF422C8C8597007406FA /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF412C8C8597007406FA /* Track.swift */; };
@@ -47,13 +44,16 @@
 		89F7CF502C8C89DB007406FA /* GenreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF4F2C8C89DB007406FA /* GenreView.swift */; };
 		89F7CF522C8C920B007406FA /* TracksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF512C8C920B007406FA /* TracksController.swift */; };
 		89F7CF542C8C972B007406FA /* TracksItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF532C8C972B007406FA /* TracksItemView.swift */; };
+		89F7CF562C8C9BA4007406FA /* ActualGradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF552C8C9BA4007406FA /* ActualGradientButton.swift */; };
+		89F7CF5B2C8CA47A007406FA /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF5A2C8CA47A007406FA /* OrderView.swift */; };
+		89F7CF5D2C8CC8B9007406FA /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF5C2C8CC8B9007406FA /* data.swift */; };
+		89F7CF5F2C8CCDA6007406FA /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF5E2C8CCDA6007406FA /* PlayerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		89F450F12C866B2F00A0F821 /* songsurprise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = songsurprise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F450F42C866B2F00A0F821 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89F450F62C866B2F00A0F821 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		89F450F82C866B2F00A0F821 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		89F450FD2C866B3100A0F821 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89F451002C866B3100A0F821 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89F451022C866B3100A0F821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,8 +78,6 @@
 		89F7CF002C890E9A007406FA /* WaveformLiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformLiveView.swift; sourceTree = "<group>"; };
 		89F7CF222C8B91FC007406FA /* TableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProvider.swift; sourceTree = "<group>"; };
 		89F7CF242C8B921C007406FA /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
-		89F7CF322C8B9AAB007406FA /* OnboardingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingsController.swift; sourceTree = "<group>"; };
-		89F7CF3A2C8BA3D8007406FA /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
 		89F7CF3C2C8BC27E007406FA /* audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audio.swift; sourceTree = "<group>"; };
 		89F7CF3E2C8C8412007406FA /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		89F7CF412C8C8597007406FA /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
@@ -91,6 +89,10 @@
 		89F7CF4F2C8C89DB007406FA /* GenreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreView.swift; sourceTree = "<group>"; };
 		89F7CF512C8C920B007406FA /* TracksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksController.swift; sourceTree = "<group>"; };
 		89F7CF532C8C972B007406FA /* TracksItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksItemView.swift; sourceTree = "<group>"; };
+		89F7CF552C8C9BA4007406FA /* ActualGradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualGradientButton.swift; sourceTree = "<group>"; };
+		89F7CF5A2C8CA47A007406FA /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		89F7CF5C2C8CC8B9007406FA /* data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
+		89F7CF5E2C8CCDA6007406FA /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +150,7 @@
 				89F7CEDA2C88C50E007406FA /* Main */,
 				89F450F42C866B2F00A0F821 /* AppDelegate.swift */,
 				89F450F62C866B2F00A0F821 /* SceneDelegate.swift */,
-				89F450F82C866B2F00A0F821 /* ViewController.swift */,
+				89F7CF5C2C8CC8B9007406FA /* data.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -163,6 +165,7 @@
 				89F7CED62C88C21E007406FA /* UIView.swift */,
 				89F7CEDE2C88D675007406FA /* UIColor.swift */,
 				89F7CF3E2C8C8412007406FA /* Client.swift */,
+				89F7CF552C8C9BA4007406FA /* ActualGradientButton.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -170,12 +173,11 @@
 		89F7CEDA2C88C50E007406FA /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				89F7CF572C8CA44E007406FA /* Order */,
 				89F7CF432C8C8635007406FA /* Audio */,
 				89F7CEDB2C88C517007406FA /* Onboarding */,
 				89F7CEE02C88E6C6007406FA /* MainController.swift */,
 				89F7CEE22C88F8C5007406FA /* SettingsController.swift */,
-				89F7CF322C8B9AAB007406FA /* OnboardingsController.swift */,
-				89F7CF3A2C8BA3D8007406FA /* PlayerController.swift */,
 				89F7CF3C2C8BC27E007406FA /* audio.swift */,
 			);
 			path = Main;
@@ -250,6 +252,7 @@
 				89F7CF4F2C8C89DB007406FA /* GenreView.swift */,
 				89F7CF512C8C920B007406FA /* TracksController.swift */,
 				89F7CF532C8C972B007406FA /* TracksItemView.swift */,
+				89F7CF5E2C8CCDA6007406FA /* PlayerController.swift */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -262,6 +265,14 @@
 				89F7CF4B2C8C8900007406FA /* CollectionView.swift */,
 			);
 			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		89F7CF572C8CA44E007406FA /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				89F7CF5A2C8CA47A007406FA /* OrderView.swift */,
+			);
+			path = Order;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,12 +358,11 @@
 				89F7CEF22C890DBC007406FA /* CircularWaveformRenderer.swift in Sources */,
 				89F7CED72C88C21E007406FA /* UIView.swift in Sources */,
 				89F7CF3F2C8C8412007406FA /* Client.swift in Sources */,
+				89F7CF562C8C9BA4007406FA /* ActualGradientButton.swift in Sources */,
 				89F7CEF42C890DF2007406FA /* TempiFFT.swift in Sources */,
-				89F7CF3B2C8BA3D8007406FA /* PlayerController.swift in Sources */,
 				89F7CF4A2C8C88E1007406FA /* CollectionViewCell.swift in Sources */,
 				89F7CEF82C890E24007406FA /* WaveformImageDrawer.swift in Sources */,
 				89F7CED52C88BFB9007406FA /* Constraints.swift in Sources */,
-				89F450F92C866B2F00A0F821 /* ViewController.swift in Sources */,
 				89F7CF012C890E9A007406FA /* WaveformLiveView.swift in Sources */,
 				89F450F52C866B2F00A0F821 /* AppDelegate.swift in Sources */,
 				89F7CED12C88BE52007406FA /* OnboardItem.swift in Sources */,
@@ -360,8 +370,10 @@
 				89F7CF252C8B921C007406FA /* TableView.swift in Sources */,
 				89F7CEEE2C890D91007406FA /* WaveformRenderer.swift in Sources */,
 				89F7CED32C88BEFD007406FA /* OnboardView.swift in Sources */,
+				89F7CF5F2C8CCDA6007406FA /* PlayerController.swift in Sources */,
 				89F7CEFA2C890E34007406FA /* WaveformImageDrawer+iOS.swift in Sources */,
 				89F7CEE12C88E6C6007406FA /* MainController.swift in Sources */,
+				89F7CF5B2C8CA47A007406FA /* OrderView.swift in Sources */,
 				89F7CF3D2C8BC27E007406FA /* audio.swift in Sources */,
 				89F7CF452C8C8655007406FA /* GenresController.swift in Sources */,
 				89F7CF482C8C88BD007406FA /* CollectionViewProvider.swift in Sources */,
@@ -371,8 +383,8 @@
 				89F7CEFF2C890E7A007406FA /* WaveformImageView.swift in Sources */,
 				89F7CF422C8C8597007406FA /* Track.swift in Sources */,
 				89F7CF542C8C972B007406FA /* TracksItemView.swift in Sources */,
-				89F7CF332C8B9AAB007406FA /* OnboardingsController.swift in Sources */,
 				89F7CEEB2C890D6A007406FA /* WaveformImageTypes.swift in Sources */,
+				89F7CF5D2C8CC8B9007406FA /* data.swift in Sources */,
 				89F7CF502C8C89DB007406FA /* GenreView.swift in Sources */,
 				89F7CF232C8B91FC007406FA /* TableViewProvider.swift in Sources */,
 				89F7CF4E2C8C8979007406FA /* Genre.swift in Sources */,

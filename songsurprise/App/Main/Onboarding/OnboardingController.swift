@@ -10,9 +10,9 @@ import UIKit
 class OnboardingController: UIViewController {
     
     private let onboardItems: [OnboardItem] = [
-        OnboardItem(icon: "idea", title: "Chose track", description: "Chose your track. Or let us create exclusive track for you. Our library is growing by the day."),
-        OnboardItem(icon: "settings", title: "Record audio message", description: "Use your micro to record your audio message. Then we combine your track & your message. Add your picture for Album cover."),
-        OnboardItem(icon: "like", title: "Pay once, love forever ", description: "Not another annoying subscription. Get lifetime access to your track in all major streaming platforms. ")
+        choseTrackItem,
+        recordAudioMessageItem,
+        payOnceItem
     ]
     private var currentIndex = 0
     private var currentController: UIViewController?
