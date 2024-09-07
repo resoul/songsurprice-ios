@@ -528,6 +528,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6MWUU9A34L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = songsurprise/Resource/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Songsurprise;
@@ -560,6 +561,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6MWUU9A34L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = songsurprise/Resource/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Songsurprise;

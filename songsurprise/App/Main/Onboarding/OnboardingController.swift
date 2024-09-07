@@ -30,7 +30,7 @@ class OnboardingController: UIViewController {
         super.viewDidLoad()
         
         navigationController?.isNavigationBarHidden = true
-        navigationController?.view.backgroundColor = .systemBackground
+        view.backgroundColor = .systemBackground
         
         let controller = UIViewController()
         currentController = controller
