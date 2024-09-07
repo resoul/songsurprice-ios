@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8909AF632C87C73D00B3FF43 /* OnboardingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8909AF622C87C73D00B3FF43 /* OnboardingsController.swift */; };
 		89F450F52C866B2F00A0F821 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F450F42C866B2F00A0F821 /* AppDelegate.swift */; };
 		89F450F72C866B2F00A0F821 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F450F62C866B2F00A0F821 /* SceneDelegate.swift */; };
 		89F450F92C866B2F00A0F821 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F450F82C866B2F00A0F821 /* ViewController.swift */; };
@@ -21,8 +20,6 @@
 		89F7CEDF2C88D675007406FA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CEDE2C88D675007406FA /* UIColor.swift */; };
 		89F7CEE12C88E6C6007406FA /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CEE02C88E6C6007406FA /* MainController.swift */; };
 		89F7CEE32C88F8C5007406FA /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CEE22C88F8C5007406FA /* SettingsController.swift */; };
-		89F7CEE62C89011F007406FA /* AudioMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CEE52C89011F007406FA /* AudioMessageController.swift */; };
-		89F7CEE82C89069F007406FA /* sampleaudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 89F7CEE72C89069F007406FA /* sampleaudio.mp3 */; };
 		89F7CEEB2C890D6A007406FA /* WaveformImageTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CEEA2C890D6A007406FA /* WaveformImageTypes.swift */; };
 		89F7CEEE2C890D91007406FA /* WaveformRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CEED2C890D91007406FA /* WaveformRenderer.swift */; };
 		89F7CEF02C890DAA007406FA /* LinearWaveformRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CEEF2C890DAA007406FA /* LinearWaveformRenderer.swift */; };
@@ -34,12 +31,25 @@
 		89F7CEFC2C890E4D007406FA /* WaveformImageDrawer+macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CEFB2C890E4D007406FA /* WaveformImageDrawer+macOS.swift */; };
 		89F7CEFF2C890E7A007406FA /* WaveformImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CEFE2C890E7A007406FA /* WaveformImageView.swift */; };
 		89F7CF012C890E9A007406FA /* WaveformLiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF002C890E9A007406FA /* WaveformLiveView.swift */; };
-		89F7CF032C891137007406FA /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF022C891137007406FA /* AudioController.swift */; };
-		89F7CF052C89179F007406FA /* file_example_MP3_5MG.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 89F7CF042C89179F007406FA /* file_example_MP3_5MG.mp3 */; };
+		89F7CF232C8B91FC007406FA /* TableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF222C8B91FC007406FA /* TableViewProvider.swift */; };
+		89F7CF252C8B921C007406FA /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF242C8B921C007406FA /* TableView.swift */; };
+		89F7CF292C8B927F007406FA /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 89F7CF282C8B927F007406FA /* Supabase */; };
+		89F7CF332C8B9AAB007406FA /* OnboardingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF322C8B9AAB007406FA /* OnboardingsController.swift */; };
+		89F7CF3B2C8BA3D8007406FA /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF3A2C8BA3D8007406FA /* PlayerController.swift */; };
+		89F7CF3D2C8BC27E007406FA /* audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF3C2C8BC27E007406FA /* audio.swift */; };
+		89F7CF3F2C8C8412007406FA /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF3E2C8C8412007406FA /* Client.swift */; };
+		89F7CF422C8C8597007406FA /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF412C8C8597007406FA /* Track.swift */; };
+		89F7CF452C8C8655007406FA /* GenresController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF442C8C8655007406FA /* GenresController.swift */; };
+		89F7CF482C8C88BD007406FA /* CollectionViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF472C8C88BD007406FA /* CollectionViewProvider.swift */; };
+		89F7CF4A2C8C88E1007406FA /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF492C8C88E1007406FA /* CollectionViewCell.swift */; };
+		89F7CF4C2C8C8900007406FA /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF4B2C8C8900007406FA /* CollectionView.swift */; };
+		89F7CF4E2C8C8979007406FA /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF4D2C8C8979007406FA /* Genre.swift */; };
+		89F7CF502C8C89DB007406FA /* GenreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF4F2C8C89DB007406FA /* GenreView.swift */; };
+		89F7CF522C8C920B007406FA /* TracksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF512C8C920B007406FA /* TracksController.swift */; };
+		89F7CF542C8C972B007406FA /* TracksItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CF532C8C972B007406FA /* TracksItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8909AF622C87C73D00B3FF43 /* OnboardingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingsController.swift; sourceTree = "<group>"; };
 		89F450F12C866B2F00A0F821 /* songsurprise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = songsurprise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F450F42C866B2F00A0F821 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89F450F62C866B2F00A0F821 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,8 +65,6 @@
 		89F7CEDE2C88D675007406FA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		89F7CEE02C88E6C6007406FA /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		89F7CEE22C88F8C5007406FA /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
-		89F7CEE52C89011F007406FA /* AudioMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioMessageController.swift; sourceTree = "<group>"; };
-		89F7CEE72C89069F007406FA /* sampleaudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = sampleaudio.mp3; path = ../../../../../../../Downloads/sampleaudio.mp3; sourceTree = "<group>"; };
 		89F7CEEA2C890D6A007406FA /* WaveformImageTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformImageTypes.swift; sourceTree = "<group>"; };
 		89F7CEED2C890D91007406FA /* WaveformRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformRenderer.swift; sourceTree = "<group>"; };
 		89F7CEEF2C890DAA007406FA /* LinearWaveformRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearWaveformRenderer.swift; sourceTree = "<group>"; };
@@ -68,8 +76,21 @@
 		89F7CEFB2C890E4D007406FA /* WaveformImageDrawer+macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WaveformImageDrawer+macOS.swift"; sourceTree = "<group>"; };
 		89F7CEFE2C890E7A007406FA /* WaveformImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformImageView.swift; sourceTree = "<group>"; };
 		89F7CF002C890E9A007406FA /* WaveformLiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformLiveView.swift; sourceTree = "<group>"; };
-		89F7CF022C891137007406FA /* AudioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
-		89F7CF042C89179F007406FA /* file_example_MP3_5MG.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = file_example_MP3_5MG.mp3; path = ../../../../../../../Downloads/file_example_MP3_5MG.mp3; sourceTree = "<group>"; };
+		89F7CF222C8B91FC007406FA /* TableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProvider.swift; sourceTree = "<group>"; };
+		89F7CF242C8B921C007406FA /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		89F7CF322C8B9AAB007406FA /* OnboardingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingsController.swift; sourceTree = "<group>"; };
+		89F7CF3A2C8BA3D8007406FA /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
+		89F7CF3C2C8BC27E007406FA /* audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audio.swift; sourceTree = "<group>"; };
+		89F7CF3E2C8C8412007406FA /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		89F7CF412C8C8597007406FA /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		89F7CF442C8C8655007406FA /* GenresController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresController.swift; sourceTree = "<group>"; };
+		89F7CF472C8C88BD007406FA /* CollectionViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewProvider.swift; sourceTree = "<group>"; };
+		89F7CF492C8C88E1007406FA /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		89F7CF4B2C8C8900007406FA /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		89F7CF4D2C8C8979007406FA /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		89F7CF4F2C8C89DB007406FA /* GenreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreView.swift; sourceTree = "<group>"; };
+		89F7CF512C8C920B007406FA /* TracksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksController.swift; sourceTree = "<group>"; };
+		89F7CF532C8C972B007406FA /* TracksItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89F7CF292C8B927F007406FA /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +110,7 @@
 			children = (
 				89F450F32C866B2F00A0F821 /* songsurprise */,
 				89F450F22C866B2F00A0F821 /* Products */,
+				89F7CF272C8B927F007406FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,7 +149,6 @@
 				89F450F42C866B2F00A0F821 /* AppDelegate.swift */,
 				89F450F62C866B2F00A0F821 /* SceneDelegate.swift */,
 				89F450F82C866B2F00A0F821 /* ViewController.swift */,
-				8909AF622C87C73D00B3FF43 /* OnboardingsController.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -134,10 +156,13 @@
 		89F7CED82C88C389007406FA /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				89F7CF462C8C88B5007406FA /* CollectionView */,
+				89F7CF212C8B91E4007406FA /* TableView */,
 				89F7CEE92C890CC2007406FA /* DSWaveformImage */,
 				89F7CED42C88BFB9007406FA /* Constraints.swift */,
 				89F7CED62C88C21E007406FA /* UIView.swift */,
 				89F7CEDE2C88D675007406FA /* UIColor.swift */,
+				89F7CF3E2C8C8412007406FA /* Client.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -145,10 +170,13 @@
 		89F7CEDA2C88C50E007406FA /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				89F7CEE42C8900F7007406FA /* AudioMessage */,
+				89F7CF432C8C8635007406FA /* Audio */,
 				89F7CEDB2C88C517007406FA /* Onboarding */,
 				89F7CEE02C88E6C6007406FA /* MainController.swift */,
 				89F7CEE22C88F8C5007406FA /* SettingsController.swift */,
+				89F7CF322C8B9AAB007406FA /* OnboardingsController.swift */,
+				89F7CF3A2C8BA3D8007406FA /* PlayerController.swift */,
+				89F7CF3C2C8BC27E007406FA /* audio.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -161,17 +189,6 @@
 				89F7CEDC2C88C54B007406FA /* OnboardingController.swift */,
 			);
 			path = Onboarding;
-			sourceTree = "<group>";
-		};
-		89F7CEE42C8900F7007406FA /* AudioMessage */ = {
-			isa = PBXGroup;
-			children = (
-				89F7CF042C89179F007406FA /* file_example_MP3_5MG.mp3 */,
-				89F7CEE72C89069F007406FA /* sampleaudio.mp3 */,
-				89F7CEE52C89011F007406FA /* AudioMessageController.swift */,
-				89F7CF022C891137007406FA /* AudioController.swift */,
-			);
-			path = AudioMessage;
 			sourceTree = "<group>";
 		};
 		89F7CEE92C890CC2007406FA /* DSWaveformImage */ = {
@@ -208,6 +225,45 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		89F7CF212C8B91E4007406FA /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				89F7CF222C8B91FC007406FA /* TableViewProvider.swift */,
+				89F7CF242C8B921C007406FA /* TableView.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		89F7CF272C8B927F007406FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89F7CF432C8C8635007406FA /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				89F7CF412C8C8597007406FA /* Track.swift */,
+				89F7CF442C8C8655007406FA /* GenresController.swift */,
+				89F7CF4D2C8C8979007406FA /* Genre.swift */,
+				89F7CF4F2C8C89DB007406FA /* GenreView.swift */,
+				89F7CF512C8C920B007406FA /* TracksController.swift */,
+				89F7CF532C8C972B007406FA /* TracksItemView.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		89F7CF462C8C88B5007406FA /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				89F7CF472C8C88BD007406FA /* CollectionViewProvider.swift */,
+				89F7CF492C8C88E1007406FA /* CollectionViewCell.swift */,
+				89F7CF4B2C8C8900007406FA /* CollectionView.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -224,6 +280,9 @@
 			dependencies = (
 			);
 			name = songsurprise;
+			packageProductDependencies = (
+				89F7CF282C8B927F007406FA /* Supabase */,
+			);
 			productName = songsurprise;
 			productReference = 89F450F12C866B2F00A0F821 /* songsurprise.app */;
 			productType = "com.apple.product-type.application";
@@ -252,6 +311,9 @@
 				Base,
 			);
 			mainGroup = 89F450E82C866B2F00A0F821;
+			packageReferences = (
+				89F7CF262C8B9249007406FA /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			productRefGroup = 89F450F22C866B2F00A0F821 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -266,10 +328,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89F7CF052C89179F007406FA /* file_example_MP3_5MG.mp3 in Resources */,
 				89F450FE2C866B3100A0F821 /* Assets.xcassets in Resources */,
 				89F451012C866B3100A0F821 /* Base in Resources */,
-				89F7CEE82C89069F007406FA /* sampleaudio.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,24 +346,36 @@
 				89F7CEFC2C890E4D007406FA /* WaveformImageDrawer+macOS.swift in Sources */,
 				89F7CEF22C890DBC007406FA /* CircularWaveformRenderer.swift in Sources */,
 				89F7CED72C88C21E007406FA /* UIView.swift in Sources */,
+				89F7CF3F2C8C8412007406FA /* Client.swift in Sources */,
 				89F7CEF42C890DF2007406FA /* TempiFFT.swift in Sources */,
-				8909AF632C87C73D00B3FF43 /* OnboardingsController.swift in Sources */,
+				89F7CF3B2C8BA3D8007406FA /* PlayerController.swift in Sources */,
+				89F7CF4A2C8C88E1007406FA /* CollectionViewCell.swift in Sources */,
 				89F7CEF82C890E24007406FA /* WaveformImageDrawer.swift in Sources */,
 				89F7CED52C88BFB9007406FA /* Constraints.swift in Sources */,
 				89F450F92C866B2F00A0F821 /* ViewController.swift in Sources */,
 				89F7CF012C890E9A007406FA /* WaveformLiveView.swift in Sources */,
 				89F450F52C866B2F00A0F821 /* AppDelegate.swift in Sources */,
-				89F7CEE62C89011F007406FA /* AudioMessageController.swift in Sources */,
 				89F7CED12C88BE52007406FA /* OnboardItem.swift in Sources */,
-				89F7CF032C891137007406FA /* AudioController.swift in Sources */,
+				89F7CF4C2C8C8900007406FA /* CollectionView.swift in Sources */,
+				89F7CF252C8B921C007406FA /* TableView.swift in Sources */,
 				89F7CEEE2C890D91007406FA /* WaveformRenderer.swift in Sources */,
 				89F7CED32C88BEFD007406FA /* OnboardView.swift in Sources */,
 				89F7CEFA2C890E34007406FA /* WaveformImageDrawer+iOS.swift in Sources */,
 				89F7CEE12C88E6C6007406FA /* MainController.swift in Sources */,
+				89F7CF3D2C8BC27E007406FA /* audio.swift in Sources */,
+				89F7CF452C8C8655007406FA /* GenresController.swift in Sources */,
+				89F7CF482C8C88BD007406FA /* CollectionViewProvider.swift in Sources */,
 				89F450F72C866B2F00A0F821 /* SceneDelegate.swift in Sources */,
 				89F7CEDD2C88C54B007406FA /* OnboardingController.swift in Sources */,
+				89F7CF522C8C920B007406FA /* TracksController.swift in Sources */,
 				89F7CEFF2C890E7A007406FA /* WaveformImageView.swift in Sources */,
+				89F7CF422C8C8597007406FA /* Track.swift in Sources */,
+				89F7CF542C8C972B007406FA /* TracksItemView.swift in Sources */,
+				89F7CF332C8B9AAB007406FA /* OnboardingsController.swift in Sources */,
 				89F7CEEB2C890D6A007406FA /* WaveformImageTypes.swift in Sources */,
+				89F7CF502C8C89DB007406FA /* GenreView.swift in Sources */,
+				89F7CF232C8B91FC007406FA /* TableViewProvider.swift in Sources */,
+				89F7CF4E2C8C8979007406FA /* Genre.swift in Sources */,
 				89F7CEDF2C88D675007406FA /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,6 +599,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		89F7CF262C8B9249007406FA /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		89F7CF282C8B927F007406FA /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89F7CF262C8B9249007406FA /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 89F450E92C866B2F00A0F821 /* Project object */;
 }

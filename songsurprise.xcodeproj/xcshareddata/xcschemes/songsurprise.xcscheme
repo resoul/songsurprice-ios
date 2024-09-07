@@ -56,6 +56,16 @@
             value = "YES"
             isEnabled = "YES">
          </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "PUBLIC_ANON_KEY"
+            value = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZlcGdid2x4b3hnenpzZWZxbmtwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjI1MTA3NjQsImV4cCI6MjAzODA4Njc2NH0.Gx9tlZLDds77DJhr6VD2fI58gidF0uguSHIbINMklP0"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "PUBLIC_URI"
+            value = "https://vepgbwlxoxgzzsefqnkp.supabase.co"
+            isEnabled = "YES">
+         </EnvironmentVariable>
       </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction
