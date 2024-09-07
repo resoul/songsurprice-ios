@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89425BD72C8D0DD000090ABD /* ClosedRange+Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89425BD62C8D0DD000090ABD /* ClosedRange+Conversion.swift */; };
+		89425BD92C8D0DE700090ABD /* NSLayoutConstraint+Multiplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89425BD82C8D0DE700090ABD /* NSLayoutConstraint+Multiplier.swift */; };
+		89425BDC2C8D0E0B00090ABD /* ImpactSliderFeedbackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89425BDB2C8D0E0B00090ABD /* ImpactSliderFeedbackGenerator.swift */; };
+		89425BDE2C8D0E1D00090ABD /* SliderFeedbackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89425BDD2C8D0E1D00090ABD /* SliderFeedbackGenerator.swift */; };
+		89425BE02C8D0E5400090ABD /* SliderControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89425BDF2C8D0E5400090ABD /* SliderControl.swift */; };
 		89F450F52C866B2F00A0F821 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F450F42C866B2F00A0F821 /* AppDelegate.swift */; };
 		89F450F72C866B2F00A0F821 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F450F62C866B2F00A0F821 /* SceneDelegate.swift */; };
 		89F450FE2C866B3100A0F821 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89F450FD2C866B3100A0F821 /* Assets.xcassets */; };
@@ -50,6 +55,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		89425BD62C8D0DD000090ABD /* ClosedRange+Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClosedRange+Conversion.swift"; sourceTree = "<group>"; };
+		89425BD82C8D0DE700090ABD /* NSLayoutConstraint+Multiplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Multiplier.swift"; sourceTree = "<group>"; };
+		89425BDB2C8D0E0B00090ABD /* ImpactSliderFeedbackGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactSliderFeedbackGenerator.swift; sourceTree = "<group>"; };
+		89425BDD2C8D0E1D00090ABD /* SliderFeedbackGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderFeedbackGenerator.swift; sourceTree = "<group>"; };
+		89425BDF2C8D0E5400090ABD /* SliderControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderControl.swift; sourceTree = "<group>"; };
 		89F450F12C866B2F00A0F821 /* songsurprise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = songsurprise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F450F42C866B2F00A0F821 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89F450F62C866B2F00A0F821 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +115,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89425BD42C8D0DA500090ABD /* SliderControl */ = {
+			isa = PBXGroup;
+			children = (
+				89425BDA2C8D0DFF00090ABD /* SliderFeedbackGenerator */,
+				89425BD52C8D0DC600090ABD /* Extensions */,
+				89425BDF2C8D0E5400090ABD /* SliderControl.swift */,
+			);
+			path = SliderControl;
+			sourceTree = "<group>";
+		};
+		89425BD52C8D0DC600090ABD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				89425BD62C8D0DD000090ABD /* ClosedRange+Conversion.swift */,
+				89425BD82C8D0DE700090ABD /* NSLayoutConstraint+Multiplier.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		89425BDA2C8D0DFF00090ABD /* SliderFeedbackGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				89425BDB2C8D0E0B00090ABD /* ImpactSliderFeedbackGenerator.swift */,
+				89425BDD2C8D0E1D00090ABD /* SliderFeedbackGenerator.swift */,
+			);
+			path = SliderFeedbackGenerator;
+			sourceTree = "<group>";
+		};
 		89F450E82C866B2F00A0F821 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +194,7 @@
 		89F7CED82C88C389007406FA /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				89425BD42C8D0DA500090ABD /* SliderControl */,
 				89F7CF462C8C88B5007406FA /* CollectionView */,
 				89F7CF212C8B91E4007406FA /* TableView */,
 				89F7CEE92C890CC2007406FA /* DSWaveformImage */,
@@ -349,14 +388,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				89F7CEF02C890DAA007406FA /* LinearWaveformRenderer.swift in Sources */,
+				89425BD92C8D0DE700090ABD /* NSLayoutConstraint+Multiplier.swift in Sources */,
 				89F7CEF62C890E11007406FA /* WaveformAnalyzer.swift in Sources */,
 				89F7CEE32C88F8C5007406FA /* SettingsController.swift in Sources */,
+				89425BE02C8D0E5400090ABD /* SliderControl.swift in Sources */,
 				89F7CEFC2C890E4D007406FA /* WaveformImageDrawer+macOS.swift in Sources */,
 				89F7CEF22C890DBC007406FA /* CircularWaveformRenderer.swift in Sources */,
 				89F7CED72C88C21E007406FA /* UIView.swift in Sources */,
 				89F7CF3F2C8C8412007406FA /* Client.swift in Sources */,
 				89F7CF562C8C9BA4007406FA /* ActualGradientButton.swift in Sources */,
 				89F7CEF42C890DF2007406FA /* TempiFFT.swift in Sources */,
+				89425BDE2C8D0E1D00090ABD /* SliderFeedbackGenerator.swift in Sources */,
 				89F7CF4A2C8C88E1007406FA /* CollectionViewCell.swift in Sources */,
 				89F7CEF82C890E24007406FA /* WaveformImageDrawer.swift in Sources */,
 				89F7CED52C88BFB9007406FA /* Constraints.swift in Sources */,
@@ -366,9 +408,11 @@
 				89F7CF4C2C8C8900007406FA /* CollectionView.swift in Sources */,
 				89F7CF252C8B921C007406FA /* TableView.swift in Sources */,
 				89F7CEEE2C890D91007406FA /* WaveformRenderer.swift in Sources */,
+				89425BDC2C8D0E0B00090ABD /* ImpactSliderFeedbackGenerator.swift in Sources */,
 				89F7CED32C88BEFD007406FA /* OnboardView.swift in Sources */,
 				89F7CF5F2C8CCDA6007406FA /* PlayerController.swift in Sources */,
 				89F7CEFA2C890E34007406FA /* WaveformImageDrawer+iOS.swift in Sources */,
+				89425BD72C8D0DD000090ABD /* ClosedRange+Conversion.swift in Sources */,
 				89F7CEE12C88E6C6007406FA /* MainController.swift in Sources */,
 				89F7CF5B2C8CA47A007406FA /* OrderView.swift in Sources */,
 				89F7CF452C8C8655007406FA /* GenresController.swift in Sources */,
