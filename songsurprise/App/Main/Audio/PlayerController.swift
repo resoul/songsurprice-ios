@@ -21,14 +21,7 @@ class PlayerController: UIViewController {
     private var currentSeconds: Int = 0
     
     private lazy var coverAlbum = UIImageView()
-    private lazy var durationSlider: UISlider = {
-        let slider = UISlider()
-        slider.minimumValue = 0.0
-        slider.maximumValue = 100.0
-        slider.addTarget(self, action: #selector(changeDurationSlider), for: .valueChanged)
-        
-        return slider
-    }()
+    private lazy var durationSlider = SliderControl()
     private lazy var durationView = UIView()
     private lazy var startTimeLabel = UILabel()
     private lazy var endTimeLabel = UILabel()
@@ -107,6 +100,15 @@ class PlayerController: UIViewController {
         playPauseButton.constraints(top: durationView.bottomAnchor, leading: nil, bottom: nil, trailing: nil, padding: .init(top: 45, left: 0, bottom: 0, right: 0), size: .init(width: 70, height: 70))
         backButton.constraints(top: durationView.bottomAnchor, leading: nil, bottom: nil, trailing: playPauseButton.leadingAnchor, padding: .init(top: 45, left: 0, bottom: 0, right: 45), size: .init(width: 70, height: 70))
         nextButton.constraints(top: durationView.bottomAnchor, leading: playPauseButton.trailingAnchor, bottom: nil, trailing: nil, padding: .init(top: 45, left: 45, bottom: 0, right: 0), size: .init(width: 70, height: 70))
+        
+        durationSlider.onEditingChanged = { isEditing in
+            if !isEditing, let player = self.player {
+                player.currentTime = TimeInterval(Float(self.durationSlider.value))
+                if TimeInterval(Float(self.durationSlider.value)) == player.duration {
+                    self.didTapNextButton()
+                }
+            }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -130,6 +132,8 @@ class PlayerController: UIViewController {
             }
             player.delegate = self
             player.play()
+            
+            durationSlider.valueRange = 0...Float(player.duration)
             
             minutes = Int(player.duration / 60)
             seconds = Int(player.duration.truncatingRemainder(dividingBy: 60))
@@ -167,35 +171,15 @@ class PlayerController: UIViewController {
     }
     
     @objc
-    func changeDurationSlider(_ sender : UISlider) {
-        guard let player = player else {
-            return
-        }
-        
-        if player.isPlaying {
-            player.currentTime = TimeInterval(Float(sender.value) * Float(player.duration) / 100.0)
-            if sender.value / 100.0 == 1.0 {
-                // end of track
-            }
-        } else {
-            player.play()
-        }
-    }
-    
-    @objc
     func trackAudio() {
         guard let player = player else {
             return
         }
-        
-        let currentTime = player.currentTime
-        let duration = player.duration
-        let normalizedTime = Float(currentTime * 100.0 / duration)
-        
+
         DispatchQueue.main.async {
-            self.durationSlider.setValue(normalizedTime, animated: true)
-            self.currentMinutes = Int(currentTime / 60);
-            self.currentSeconds = Int(currentTime.truncatingRemainder(dividingBy: 60))
+            self.durationSlider.value = Float(player.currentTime)
+            self.currentMinutes = Int(player.currentTime / 60);
+            self.currentSeconds = Int(player.currentTime.truncatingRemainder(dividingBy: 60))
             self.startTimeLabel.text = String(format: "%02i:%02i", self.currentMinutes, self.currentSeconds)
             self.endTimeLabel.text = String(format: "%02i:%02i", self.minutes, self.seconds)
         }
