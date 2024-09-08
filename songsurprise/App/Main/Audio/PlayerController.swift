@@ -45,7 +45,7 @@ class PlayerController: UIViewController {
     
     private lazy var backButton: UIButton = {
         let button = UIButton()
-        button.addTarget(self, action: #selector(didTapBackButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(didTapPrevButton), for: .touchUpInside)
         button.tintColor = .label
         button.setBackgroundImage(UIImage(systemName: "backward.fill"), for: .normal)
         
@@ -121,11 +121,11 @@ class PlayerController: UIViewController {
         stopTimer()
     }
     
-    private func play(_ data: Data) {
+    private func play(_ url: URL) {
         do {
             try AVAudioSession.sharedInstance().setMode(.default)
             try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
-            player = try AVAudioPlayer(data: data)
+            player = try AVAudioPlayer(contentsOf: url)
             guard let player = player else {
                 print("player is nil")
                 return
@@ -151,20 +151,18 @@ class PlayerController: UIViewController {
         playPauseButton.setBackgroundImage(UIImage(systemName: "pause.fill"), for: .normal)
         
         do {
-            let endpoint = try Client.http.supabase()
-                .storage
-                .from("audio")
-                .getPublicURL(path: song.endpoint)
-            let task = URLSession.shared.dataTask(with: endpoint) { data, response, error in
-                if let error = error {
-                    print("Error: \(error.localizedDescription)")
-                } else if let data = data {
+            let endpoint = try Client.http.supabase().storage.from("audio").getPublicURL(path: song.endpoint)
+            StorageManager.shared.getAudioFile(endpoint: endpoint) { result in
+                switch result {
+                case .success(let url):
                     DispatchQueue.main.async {
-                        self.play(data)
+                        self.play(url)
                     }
+                    break
+                case .failure(_):
+                    break
                 }
             }
-            task.resume()
         } catch {
             print(error.localizedDescription)
         }
@@ -197,7 +195,7 @@ class PlayerController: UIViewController {
     }
     
     @objc
-    func didTapBackButton() {
+    func didTapPrevButton() {
         if index > 0 {
             index = index - 1
             stopTimer()

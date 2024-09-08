@@ -12,6 +12,9 @@
 		89425BDC2C8D0E0B00090ABD /* ImpactSliderFeedbackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89425BDB2C8D0E0B00090ABD /* ImpactSliderFeedbackGenerator.swift */; };
 		89425BDE2C8D0E1D00090ABD /* SliderFeedbackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89425BDD2C8D0E1D00090ABD /* SliderFeedbackGenerator.swift */; };
 		89425BE02C8D0E5400090ABD /* SliderControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89425BDF2C8D0E5400090ABD /* SliderControl.swift */; };
+		89425BE22C8DCB6000090ABD /* MainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89425BE12C8DCB6000090ABD /* MainItem.swift */; };
+		89425BE52C8DFDB200090ABD /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89425BE42C8DFDB200090ABD /* StorageManager.swift */; };
+		89425BE72C8E41D000090ABD /* BorderGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89425BE62C8E41D000090ABD /* BorderGradientView.swift */; };
 		89F450F52C866B2F00A0F821 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F450F42C866B2F00A0F821 /* AppDelegate.swift */; };
 		89F450F72C866B2F00A0F821 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F450F62C866B2F00A0F821 /* SceneDelegate.swift */; };
 		89F450FE2C866B3100A0F821 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89F450FD2C866B3100A0F821 /* Assets.xcassets */; };
@@ -23,7 +26,6 @@
 		89F7CEDD2C88C54B007406FA /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CEDC2C88C54B007406FA /* OnboardingController.swift */; };
 		89F7CEDF2C88D675007406FA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CEDE2C88D675007406FA /* UIColor.swift */; };
 		89F7CEE12C88E6C6007406FA /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CEE02C88E6C6007406FA /* MainController.swift */; };
-		89F7CEE32C88F8C5007406FA /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CEE22C88F8C5007406FA /* SettingsController.swift */; };
 		89F7CEEB2C890D6A007406FA /* WaveformImageTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CEEA2C890D6A007406FA /* WaveformImageTypes.swift */; };
 		89F7CEEE2C890D91007406FA /* WaveformRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CEED2C890D91007406FA /* WaveformRenderer.swift */; };
 		89F7CEF02C890DAA007406FA /* LinearWaveformRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7CEEF2C890DAA007406FA /* LinearWaveformRenderer.swift */; };
@@ -60,6 +62,9 @@
 		89425BDB2C8D0E0B00090ABD /* ImpactSliderFeedbackGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactSliderFeedbackGenerator.swift; sourceTree = "<group>"; };
 		89425BDD2C8D0E1D00090ABD /* SliderFeedbackGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderFeedbackGenerator.swift; sourceTree = "<group>"; };
 		89425BDF2C8D0E5400090ABD /* SliderControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderControl.swift; sourceTree = "<group>"; };
+		89425BE12C8DCB6000090ABD /* MainItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainItem.swift; sourceTree = "<group>"; };
+		89425BE42C8DFDB200090ABD /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		89425BE62C8E41D000090ABD /* BorderGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderGradientView.swift; sourceTree = "<group>"; };
 		89F450F12C866B2F00A0F821 /* songsurprise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = songsurprise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F450F42C866B2F00A0F821 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89F450F62C866B2F00A0F821 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,7 +78,6 @@
 		89F7CEDC2C88C54B007406FA /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		89F7CEDE2C88D675007406FA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		89F7CEE02C88E6C6007406FA /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
-		89F7CEE22C88F8C5007406FA /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		89F7CEEA2C890D6A007406FA /* WaveformImageTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformImageTypes.swift; sourceTree = "<group>"; };
 		89F7CEED2C890D91007406FA /* WaveformRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformRenderer.swift; sourceTree = "<group>"; };
 		89F7CEEF2C890DAA007406FA /* LinearWaveformRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearWaveformRenderer.swift; sourceTree = "<group>"; };
@@ -143,6 +147,14 @@
 			path = SliderFeedbackGenerator;
 			sourceTree = "<group>";
 		};
+		89425BE32C8DFD9D00090ABD /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				89425BE42C8DFDB200090ABD /* StorageManager.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
 		89F450E82C866B2F00A0F821 = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +215,7 @@
 				89F7CEDE2C88D675007406FA /* UIColor.swift */,
 				89F7CF3E2C8C8412007406FA /* Client.swift */,
 				89F7CF552C8C9BA4007406FA /* ActualGradientButton.swift */,
+				89425BE62C8E41D000090ABD /* BorderGradientView.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -210,11 +223,12 @@
 		89F7CEDA2C88C50E007406FA /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				89425BE32C8DFD9D00090ABD /* Storage */,
 				89F7CF572C8CA44E007406FA /* Order */,
 				89F7CF432C8C8635007406FA /* Audio */,
 				89F7CEDB2C88C517007406FA /* Onboarding */,
 				89F7CEE02C88E6C6007406FA /* MainController.swift */,
-				89F7CEE22C88F8C5007406FA /* SettingsController.swift */,
+				89425BE12C8DCB6000090ABD /* MainItem.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -390,7 +404,6 @@
 				89F7CEF02C890DAA007406FA /* LinearWaveformRenderer.swift in Sources */,
 				89425BD92C8D0DE700090ABD /* NSLayoutConstraint+Multiplier.swift in Sources */,
 				89F7CEF62C890E11007406FA /* WaveformAnalyzer.swift in Sources */,
-				89F7CEE32C88F8C5007406FA /* SettingsController.swift in Sources */,
 				89425BE02C8D0E5400090ABD /* SliderControl.swift in Sources */,
 				89F7CEFC2C890E4D007406FA /* WaveformImageDrawer+macOS.swift in Sources */,
 				89F7CEF22C890DBC007406FA /* CircularWaveformRenderer.swift in Sources */,
@@ -420,15 +433,18 @@
 				89F450F72C866B2F00A0F821 /* SceneDelegate.swift in Sources */,
 				89F7CEDD2C88C54B007406FA /* OnboardingController.swift in Sources */,
 				89F7CF522C8C920B007406FA /* TracksController.swift in Sources */,
+				89425BE52C8DFDB200090ABD /* StorageManager.swift in Sources */,
 				89F7CEFF2C890E7A007406FA /* WaveformImageView.swift in Sources */,
 				89F7CF422C8C8597007406FA /* Track.swift in Sources */,
 				89F7CF542C8C972B007406FA /* TracksItemView.swift in Sources */,
 				89F7CEEB2C890D6A007406FA /* WaveformImageTypes.swift in Sources */,
 				89F7CF5D2C8CC8B9007406FA /* data.swift in Sources */,
+				89425BE72C8E41D000090ABD /* BorderGradientView.swift in Sources */,
 				89F7CF502C8C89DB007406FA /* GenreView.swift in Sources */,
 				89F7CF232C8B91FC007406FA /* TableViewProvider.swift in Sources */,
 				89F7CF4E2C8C8979007406FA /* Genre.swift in Sources */,
 				89F7CEDF2C88D675007406FA /* UIColor.swift in Sources */,
+				89425BE22C8DCB6000090ABD /* MainItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,40 +9,38 @@ import UIKit
 
 class MainController: UIViewController {
     
-    private lazy var orderItemOne = OrderView()
-    private lazy var orderItemTwo = OrderView()
-    private lazy var orderItemThree = OrderView()
+    private var items: [OnboardItem] = [
+        choseTrackItem,
+        recordAudioMessageItem,
+        payOnceItem
+    ]
 
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        setupLayout()
-    }
+    private lazy var collectionView: UICollectionView = {
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        item.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0)
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(0.28))
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        group.interItemSpacing = .fixed(8)
+        let section = NSCollectionLayoutSection(group: group)
+        let layout = UICollectionViewCompositionalLayout(section: section)
+        
+        let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        view.delegate = self
+        view.dataSource = self
+        view.register(cell: MainItem.self)
+        
+        return view
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        navigationItem.title = "Create track"
-        
-        let settings = UIBarButtonItem(image: UIImage(systemName: "gear"), style: .plain, target: self, action: #selector(handleButton))
-        navigationItem.rightBarButtonItems = [settings]
-        
-        orderItemOne.configure(choseTrackItem)
-        orderItemTwo.configure(recordAudioMessageItem)
-        orderItemThree.configure(payOnceItem)
-        
-        orderItemOne.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleSelectGenres)))
-        orderItemTwo.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
-        orderItemThree.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
+        view.addSubview(collectionView)
+        collectionView.constraints(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.trailingAnchor)
+        StorageManager.shared.cacheAudioFiles()
     }
-    
-    private func setupLayout() {
-        let height = UIScreen.main.bounds.height - (view.safeAreaInsets.top + view.safeAreaInsets.bottom + 215)
-        view.addSubviews(orderItemOne, orderItemTwo, orderItemThree)
-        orderItemOne.constraints(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 65, left: 15, bottom: 0, right: 15), size: .init(width: 0, height: height / 3))
-        orderItemTwo.constraints(top: orderItemOne.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 50, left: 15, bottom: 0, right: 15), size: .init(width: 0, height: height / 3))
-        orderItemThree.constraints(top: orderItemTwo.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 50, left: 15, bottom: 0, right: 15), size: .init(width: 0, height: height / 3))
-    }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if UserDefaults.standard.bool(forKey: "onborded") == false {
@@ -56,14 +54,22 @@ class MainController: UIViewController {
     func handleSelectGenres() {
         navigationController?.pushViewController(GenresController(), animated: true)
     }
-    
-    @objc
-    func handleTap() {
-        navigationController?.pushViewController(SettingsController(), animated: true)
+}
+
+extension MainController: CollectionViewProvider {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return items.count
     }
     
-    @objc
-    func handleButton() {
-        navigationController?.pushViewController(SettingsController(), animated: true)
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        navigationController?.pushViewController(items[indexPath.row].controller, animated: true)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withClass: MainItem.self, for: indexPath)
+        cell.configure(items[indexPath.row], showBorder: indexPath.row != 2)
+        
+        return cell
     }
 }
