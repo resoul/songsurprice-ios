@@ -57,6 +57,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8936ED642E23D59800F87050 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		89425BD62C8D0DD000090ABD /* ClosedRange+Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClosedRange+Conversion.swift"; sourceTree = "<group>"; };
 		89425BD82C8D0DE700090ABD /* NSLayoutConstraint+Multiplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Multiplier.swift"; sourceTree = "<group>"; };
 		89425BDB2C8D0E0B00090ABD /* ImpactSliderFeedbackGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactSliderFeedbackGenerator.swift; sourceTree = "<group>"; };
@@ -188,6 +189,7 @@
 				89F450FD2C866B3100A0F821 /* Assets.xcassets */,
 				89F450FF2C866B3100A0F821 /* LaunchScreen.storyboard */,
 				89F451022C866B3100A0F821 /* Info.plist */,
+				8936ED642E23D59800F87050 /* Config.xcconfig */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -356,7 +358,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					89F450F02C866B2F00A0F821 = {
 						CreatedOnToolsVersion = 15.4;
@@ -464,6 +466,7 @@
 /* Begin XCBuildConfiguration section */
 		89F451032C866B3100A0F821 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8936ED642E23D59800F87050 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -497,6 +500,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6MWUU9A34L;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -527,6 +531,7 @@
 		};
 		89F451042C866B3100A0F821 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8936ED642E23D59800F87050 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -560,6 +565,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6MWUU9A34L;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -583,12 +589,12 @@
 		};
 		89F451062C866B3100A0F821 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8936ED642E23D59800F87050 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6MWUU9A34L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = songsurprise/Resource/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Songsurprise;
@@ -616,12 +622,12 @@
 		};
 		89F451072C866B3100A0F821 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8936ED642E23D59800F87050 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6MWUU9A34L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = songsurprise/Resource/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Songsurprise;
